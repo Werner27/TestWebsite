@@ -9,10 +9,14 @@ div {
 </style>
 </head>
 	<body>
+		<a href="https://docs.github.com/de">GitHub-Dokumentation</a>
+		<a href="https://git-scm.com/doc">Git Dokumentation</a>
 		<h1>Das sind meine git Befehle</h1>
 		<div>
 		<p>cd ~/Projekte/Website</p>
+		<p>Use git init to create a new local repository.</p>
 		<p>git init</p>
+		
 		<p>git status</p>
 		<p>git add .</p>
 		<p>git commit -m "Erste Version von unserem Website Projekt"</p>
@@ -25,6 +29,26 @@ div {
 		<p></p>
 		<p></p>
 		<p></p>
+		<h2>Simple git remote add origin use</h2>
+		<a href="https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely">How to use the git remote add origin command</a>
+		<div>
+		</div>
+		<h3>Step 1: Create a local Git repo</h3>
+		To connect a new project to a remote Git repository, you must create a Git repo locally, add files and perform at least one commit. The terminal window commands to do this are as follows:
+
+		git init
+		git touch alpha.txt
+		git add alpha.txt
+		git commit -m "Git commit history created"
+		
+		These commands create a local Git repository that includes one file and one commit.	
+		<h3>Step 2: Add a reference to the remote repoo</h3>
+		To connect this new project to a repo on a remote hosting service such as GitHub, GitLab or Bitbucket, obtain the Git URL of the remote repository and issue the following cstatusommand:
+		 git remote -v
+			FlaskTemplate   https://github.com/Werner27/FlaskTemplate (fetch)
+			FlaskTemplate   https://github.com/Werner27/FlaskTemplate (push)
+			
+
 		</div>
 	</body>
 </html>
