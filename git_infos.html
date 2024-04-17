@@ -88,6 +88,8 @@
                     <p>Der Befehl git status gibt den Status des Arbeitsverzeichnisses und der Staging-Umgebung zurück. So kannst du sehen, welche Änderungen sich in der Staging-Umgebung befinden, welche nicht und welche Dateien nicht von Git verfolgt werden.</p>
                 </div>
             </div>
+ 
+			<!-- git add -->
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-10">
@@ -102,8 +104,101 @@
             <div class="panel-body" id="addPanelBody">
                 <div id="addDetails" class="command-details">
                     <p><strong>Beschreibung:</strong></p>
-                    <p>Hier wird ein erklärender Text eingtragen</p>
+                    <p>Mit dem Befehl werden Files zum Staging-Area hinzugefügt. Gebe Filename oder . an. Beim . werden alle Files hinzugefügt</p>
                 </div>
+			</div>
+
+			<!-- git commit -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <h2 class="panel-title">git commit -m "Textbeschreibung für commit"</h2>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn  btn-info btn-xs" onclick="toggleDetails('commit')">
+						<span class="glyphicon glyphicon-question-sign"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="commitPanelBody">
+                <div id="commitDetails" class="command-details">
+                    <p><strong>Beschreibung:</strong></p>
+                    <p>Es wird ein commit erstellt. Mit der Option -m wird eine Textbeschreibung zum commit mitgegeben</p>
+                </div>
+            </div>
+
+			<!-- git log -->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2 class="panel-title">git log</h2>
+                    </div>
+                    <div class="col-xs-4">
+                        <p># show history</p>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn  btn-info btn-xs" onclick="toggleDetails('log')">
+						<span class="glyphicon glyphicon-question-sign"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="logPanelBody">
+                <div id="logDetails" class="command-details">
+                    <p><strong>Beschreibung:</strong></p>
+                    <p>Es wird die history der commits angezeigt</p>
+                </div>
+            </div>
+
+			<!-- git checkout auf commit-->
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2 class="panel-title">git checkout 73191724f59ee431b3ae66424d83fa73e14b91e4</h2>
+					</div>
+                    <div class="col-xs-4">
+                        <p># Zeiger auf commit setzen</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2 class="panel-title">git checkout master </h2>
+                    </div>
+                    <div class="col-xs-4">
+                        <p># Zeiger auf master setzen</p>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn  btn-info btn-xs" onclick="toggleDetails('checkout')">
+						<span class="glyphicon glyphicon-question-sign"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="checkoutPanelBody">
+                <div id="checkoutDetails" class="command-details">
+                    <p><strong>Beschreibung:</strong></p>
+                    <p>Mit diesem Befehl kann man den Zeiger auf einen beliebigen commit und auch wieder auf den Head (master) eines branches setzen.</p>
+                </div>
+            </div>
+
+			<!-- git checkout auf master
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <h2 class="panel-title">git checkout 73191724f59ee431b3ae66424d83fa73e14b91e4 # Zeiger auf commit setzen</h2>
+					</div>
+                    <div class="col-xs-10">
+                        <h2 class="panel-title">git checkout master # Zeiger auf master setzen</h2>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn  btn-info btn-xs" onclick="toggleDetails('checkout')">
+						<span class="glyphicon glyphicon-question-sign"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="checkoutPanelBody">
+                <div id="checkoutDetails" class="command-details">
+                    <p><strong>Beschreibung:</strong></p>
+                    <p>Mit diesem Befehl kann man den Zeiger auf einen beliebigen commit setzen oder auf den head(master) einer branch</p>
+                </div>
+            </div>
+			-->
         </div>
 
         <!-- Weitere Befehle hier einfügen  und Text new_insert ersetzen-->
